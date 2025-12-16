@@ -15,8 +15,8 @@ jobs:
       - name: Install Openlayer CLI
         run: curl -o- "https://downloads.openlayer.com/cli/install/linux_64.sh" | sh
       - name: Install Your Requirements
-        run: openlayer install
+        run: openlayer install --output-mode=ci
       - name: Generate Outputs
-        run: openlayer batch
+        run: openlayer batch --output-mode=ci
       - name: Push Project Artifacts to Openlayer
-        run: openlayer push --message ${{ github.event.head_commit.message }} --api-key=${{ secrets.OPENLAYER_API_KEY }}
+        run: openlayer push --message ${{ github.event.head_commit.message }} --api-key=${{ secrets.OPENLAYER_API_KEY }} --output-mode=ci
