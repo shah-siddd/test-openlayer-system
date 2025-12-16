@@ -1,7 +1,7 @@
 name: Openlayer Tests
 env:
   OPENLAYER_PROJECT_ID: ${{ secrets.OPENLAYER_PROJECT_ID }}
-  # Anything else you need for your AI to generate outputs
+  OPENLAYER_BASE_URL: ${{ secrets.OPENLAYER_BASE_URL }}
   OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 on:
   push:
