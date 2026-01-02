@@ -1,5 +1,5 @@
 # OpenAI + Openlayer (TypeScript)
-chage
+change
 
 This template shows how to set up Openlayer with a project built with **OpenAI using TypeScript**. It
 features Openlayer's:
